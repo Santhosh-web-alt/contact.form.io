@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h1>Contact Form</h1>
+</center>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"required placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your @gmail.com">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Say Someting"></textarea>
+
+        <button id="submit-btn">Submit</button>
+        <button id="clear-btn">Clear</button>
+
+        <div id="error-message" style="display: none; color: red;"></div>
+    </form>
+
+    <div id="thank-you-message" style="display: none;">
+        <h2>Thank You!</h2>
+        <p>Your message has been submitted successfully.</p>
+        <p>Name: <span id="submitted-name"></span></p>
+        <p>Email: <span id="submitted-email"></span></p>
+        <p>Message: <span id="submitted-message"></span></p>
+    </div>
+
+    <script src="server.js"></script>
+</body>
+</html>
